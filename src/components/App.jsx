@@ -5,6 +5,8 @@ import Loader from './Loader/Loader';
 import Button from './Button/Button';
 import Modal from './Modal/Modal';
 
+import styles from './App.module.scss';
+
 export const App = () => {
   return (
     <div
