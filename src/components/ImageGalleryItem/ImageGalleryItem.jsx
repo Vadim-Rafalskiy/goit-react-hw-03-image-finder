@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import styles from './ImageGalleryItem.module.scss';
 
 const ImageGalleryItem = ({ webformatURL, tags, largeImageURL, showImage }) => {
@@ -19,3 +21,10 @@ const ImageGalleryItem = ({ webformatURL, tags, largeImageURL, showImage }) => {
 };
 
 export default ImageGalleryItem;
+
+ImageGalleryItem.propTypes = {
+  webformatURL: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
+  showImage: PropTypes.func.isRequired,
+};
