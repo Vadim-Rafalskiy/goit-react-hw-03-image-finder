@@ -77,7 +77,7 @@ export class App extends Component {
         <ImageGallery items={items} showImage={showImage} />
         {error && <p>ERROR</p>}
         {loading && <Loader />}
-        {Boolean(items.length) && <Button loadMore={loadMore} />}
+        {Boolean(items.length) && !loading && <Button loadMore={loadMore} />}
         {showModal && (
           <Modal close={closeModal}>
             <BigImage {...bigImage} />
