@@ -73,7 +73,7 @@ export class App extends Component {
     const { searchImage, loadMore, showImage, closeModal } = this;
     return (
       <>
-        <Searchbar onSubmit={searchImage} />,
+        <Searchbar onSubmit={searchImage} />
         <ImageGallery items={items} showImage={showImage} />
         {error && <p>ERROR</p>}
         {loading && <Loader />}
